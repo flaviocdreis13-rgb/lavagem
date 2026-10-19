@@ -10,14 +10,14 @@
   <style>
     :root {
       --bg: #060504;
-      --card-bg: rgba(18, 15, 12, 0.88);
-      --card-border: #3d3118;
+      --card-bg: rgba(15, 12, 9, 0.90);
+      --card-border: #423519;
       --accent: #d4af37; /* Dourado */
-      --accent-glow: rgba(212, 175, 55, 0.35);
+      --accent-glow: rgba(212, 175, 55, 0.4);
       --text: #ffffff;
       --text-muted: #a69875;
-      --input-bg: rgba(10, 8, 6, 0.95);
-      --input-border: #524220;
+      --input-bg: rgba(8, 6, 5, 0.95);
+      --input-border: #5a4722;
       --success: #10b981;
     }
 
@@ -37,9 +37,9 @@
       align-items: center;
       justify-content: center;
       padding: 20px;
-      /* Fundo com a imagem bg.jpg e uma camada escura suave para destacar os campos */
+      /* Imagem de fundo real com camada escura para contraste perfeito */
       background-image: 
-        radial-gradient(circle at 50% 50%, rgba(6, 5, 4, 0.6) 0%, rgba(6, 5, 4, 0.85) 100%),
+        linear-gradient(rgba(6, 5, 4, 0.72), rgba(6, 5, 4, 0.82)),
         url('bg.jpg');
       background-size: cover;
       background-position: center;
@@ -62,11 +62,12 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(212, 175, 55, 0.12);
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      padding: 6px 14px;
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      padding: 6px 16px;
       border-radius: 20px;
       margin-bottom: 12px;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
     }
 
     nav .logo-badge span {
@@ -81,7 +82,7 @@
       font-weight: 900;
       font-size: 1.6rem;
       letter-spacing: 3px;
-      color: #f3e5ab;
+      color: #f6e8b1;
     }
 
     nav small {
@@ -89,7 +90,7 @@
       color: var(--text-muted);
       font-size: 0.75rem;
       font-family: 'JetBrains Mono', monospace;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
       margin-top: 4px;
     }
 
@@ -163,7 +164,7 @@
       border-radius: 16px;
       padding: 24px;
       border: 1px solid var(--card-border);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
       backdrop-filter: blur(12px);
     }
 
